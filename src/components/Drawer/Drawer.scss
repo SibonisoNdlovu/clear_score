@@ -1,0 +1,32 @@
+@import '../../styles/variable.scss';
+
+.side-drawer {
+  position: fixed;
+  height: 100%;
+  background: white;
+  top: 0;
+  right: 0;
+  width: 40%;
+  z-index: 200;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+.side-drawer.open {
+  transform: translateX(0);
+}
+.drawer {
+  margin-left: $Spacing-xxlarge;
+  margin-top: 65px;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+

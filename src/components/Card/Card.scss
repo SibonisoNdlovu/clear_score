@@ -1,0 +1,192 @@
+@import '../../styles/variable.scss';
+@import '../../styles/mixins.scss';
+
+
+  @include small {
+    .card {
+      margin: 9px;
+      height: 232px;
+    .tag{
+      margin-top: 16px;
+      margin-left: 16px;
+      margin-bottom: 192px;
+      margin-right: 89px;
+      width: fit-content;
+    }
+    .title {
+      margin-left: 16px;
+      margin-top: 40px;
+    }
+    .description {
+      margin-left: 16px;
+      margin-top: 64px;
+      width: 30%;
+    }
+    .insightsFooter {
+      margin-top: 192px;
+      margin-left: 16px;
+      width: fit-content;
+    }
+    .link {
+      margin-left: 16px;
+      margin-top: 160px;
+      width: fit-content;
+    }
+    }
+  }
+  @include medium {
+    .card {
+      margin: $Spacing-medium;
+      height: 152px;
+
+    .tag{
+      margin-top: $Spacing-xxlarge;
+      margin-left: $Spacing-xxlarge;
+      margin-right: 265;
+      margin-bottom: 104px;
+      width: fit-content;
+    }
+    .title {
+      margin-top: 48px;
+      margin-left: $Spacing-xxlarge;
+    }
+    .description {
+      margin-top: 72px;
+      margin-left: $Spacing-xxlarge;
+      width: 40%;    
+    }
+    .insightsFooter {
+      margin-top: 124px;
+      margin-left: 24px;
+      width: 40%;
+    }
+    .link {
+      margin-left: $Spacing-xxlarge;    
+      margin-top: 96px;
+      width: fit-content;
+    }
+    }
+  }
+  @include large {
+    .card {
+      margin: $Spacing-medium;
+      height: 152px;
+    .tag{
+      margin-top: $Spacing-xxlarge;
+      margin-left: $Spacing-xxlarge;
+      margin-right: 265;
+      margin-bottom: 104px;
+    }
+    .title {
+      margin-top: 48px;
+      margin-left: $Spacing-xxlarge;
+    }
+    .description {
+      margin-top: 72px;
+      margin-left: $Spacing-xxlarge;
+      width: 40%;    
+    }
+    .insightsFooter {
+      margin-top: $Spacing-xxlarge;
+      margin-left: 110px;
+      width: auto !important;
+    }
+    .link {
+      margin-left: $Spacing-xxlarge;    
+      margin-top: 96px;
+    }
+    }
+  }
+  @include extra-large {
+    .card {
+      margin: $Spacing-medium;
+      height: 152px;
+    .tag{
+      margin-top: $Spacing-xxlarge;
+      margin-left: $Spacing-xxlarge;
+      margin-bottom: 104px;
+      margin-right: 337px;
+    }
+    .title {
+      margin-top: 48px;
+      margin-left: $Spacing-xxlarge;
+    }
+    .description {
+      margin-top: 72px;
+      margin-left: $Spacing-xxlarge; 
+      width: 29%;    
+    }
+    .insightsFooter {
+      margin-top: $Spacing-xxlarge;
+      margin-left: 110px;
+      width: auto !important;
+    }
+    .link {
+      margin-left: $Spacing-xxlarge;    
+      margin-top: 96px;
+    }
+  }
+}
+
+
+.card {
+  border-radius: $Border-radius-medium;
+  box-shadow: $Shadow;
+  .tag {
+    color: rgb(79, 52, 25);
+    font-size: $Font-size-xlarge;
+    font-weight: $Font-weight-normal;
+    height: 16px;
+    letter-spacing: 0.4px;
+    border-radius: $Border-radius-small;
+    background-color: $Green-pill-background;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 2px;
+  }
+  .title {
+    color: rgb(38, 54, 72);
+    font-size: $Font-size-medium;
+    font-weight: $Font-weight-bold;
+    height: 20px;
+    line-height: 20px;
+    width: 368px;
+    position: absolute;
+  }
+  .description {
+    font-weight: $Font-weight-normal;
+    color: rgb(116, 127, 138);
+    font-size: $Font-size-large;
+    font-weight: $Font-weight-normal;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+  }
+  .insightsFooter {
+    color: rgb(79, 52, 25);
+    font-size: $Font-size-xlarge;
+    font-weight: $Font-weight-normal;
+    height: 16px;
+    letter-spacing: 0.4px;
+    border-radius: $Border-radius-small;
+    background-color: $Gray-pill-background;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 2px;
+  }
+  .link {
+    position: absolute;
+    color: $CTA;
+    cursor: pointer;
+    z-index: 100;
+    &:hover {
+      color: $CTA-hover;
+      text-decoration: underline;
+    }
+  }
+}
+

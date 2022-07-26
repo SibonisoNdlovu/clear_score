@@ -1,0 +1,61 @@
+@import '../../styles/variable.scss';
+@import '../../styles/mixins.scss';
+
+.insightList {
+  .insightsHeader {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  };
+
+  .list {
+    display:grid;
+    @include small {
+      // grid-template-columns: 1fr 1fr;
+      // 178px
+      grid-template-columns: 260px 260px 260px;
+      .list{
+        margin: 8px;
+      }
+      .insightsHeader {
+        margin-bottom: 9px;
+      }
+    }
+    @include medium {
+      // grid-template-columns: 1fr 1fr;
+      grid-template-columns: 450px 450px 450px;
+      .list{
+        margin: 8px;
+      }
+      .insightsHeader {
+        margin-bottom: 9px;
+      }
+    }
+    @include large {
+      grid-template-columns: 1fr 1fr;
+      .list {
+        margin-right: 16px;
+        // padding: 16px;
+      }
+      .insightsHeader {
+        margin: 16px;
+      }
+    }
+    @include extra-large {
+      grid-template-columns: 1fr 1fr 1fr;
+      .list {
+        margin-right: 16px;
+      }
+      .insightsHeader {
+        // margin-bottom: $Spacing-xxlarge;
+      }
+    }
+  
+    &::-webkit-scrollbar {
+      width: 1;
+    }
+  }
+}
+
