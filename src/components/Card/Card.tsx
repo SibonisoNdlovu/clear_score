@@ -3,9 +3,8 @@ import BackDrop from '../Backdrop/Backdrop';
 import './Card.scss';
 import Spinner from '../Spinner/Spinner';
 import { InsightType } from '../../enums/InsightType';
-import Drawer from '../Drawer/Drawer';
 
-// const Drawer = React.lazy(() => import('../Drawer/Drawer'));
+const Drawer = React.lazy(() => import('../Drawer/Drawer'));
 
 function Card({insight, trackLanguage}:any) {
   const [isOpen, setIsOpen] = React.useState(false);

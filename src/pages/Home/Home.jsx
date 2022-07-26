@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react'
 import Spinner from '../../components/Spinner/Spinner';
 import './Home.scss'
-// import Insights from '../../Components/Insights/Insights';
 
 const Insights = React.lazy(() => import('../../components/Insights/Insights'));
 
