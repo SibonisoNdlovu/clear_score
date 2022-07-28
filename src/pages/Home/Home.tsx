@@ -7,7 +7,7 @@ const Insights = React.lazy(() => import('../../components/Insights/Insights'));
 function Home() {
   return (
     <div>
-      <Suspense fallback={Spinner}>
+      <Suspense fallback={<Spinner/>}>
         <Insights/>
       </Suspense>
     </div>
